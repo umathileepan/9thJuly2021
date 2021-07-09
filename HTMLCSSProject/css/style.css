@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  margin: 20px;
+  color: blanchedalmond;
+  position: absolute;
+}
+
+img {
+  float: left;
+}
+
+ul,
+li {
+  position: relative;
+  left: 20rem;
+  top: 1rem;
+  font-size: 16px;
+  list-style-type: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+.floatclear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.colOne {
+  width: 60rem;
+  height: fit-content;
+}
+
+.colTwo {
+  width: 60rem;
+  height: fit-content;
+}
+
+h1 {
+  position: relative;
+  top: 15rem;
+  left: 1rem;
+  font-size: 60px;
+}
+
+p {
+  position: relative;
+  top: 15rem;
+  left: 1rem;
+  font-size: 24px;
+}
+
+.button {
+  position: relative;
+  top: 15rem;
+  left: 1rem;
+  width: 350px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgb(230, 67, 8);
+  border-radius: 20px;
+}
+
+.hosting {
+  height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
