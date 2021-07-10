@@ -116,11 +116,35 @@ a {
     font-size: 1.2rem;
   }
 }
-img {
-  float: left;
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  color: var(--color-heading);
 }
 
-ul,
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+/*ul,
 li {
   position: relative;
   left: 20rem;
@@ -129,6 +153,10 @@ li {
   list-style-type: none;
   display: inline;
   margin-left: 20px;
+}
+
+img {
+  float: left;
 }
 
 .floatclear::after {
@@ -193,4 +221,4 @@ p {
   .container {
     flex-direction: row;
   }
-}
+}*/
