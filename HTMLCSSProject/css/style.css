@@ -14,7 +14,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  background-color: black;
+  background-color: rgb(235, 221, 221);
   margin: 20px;
   color: var(--color-body);
   position: absolute;
@@ -84,6 +84,38 @@ a {
   }
 }
 
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
 img {
   float: left;
 }
