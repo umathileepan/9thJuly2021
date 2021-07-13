@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-borders: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -19,7 +21,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  background-color: rgb(235, 221, 221);
+  
   margin: 20px;
   color: var(--color-body);
   position: absolute;
@@ -235,8 +237,8 @@ a {
 
 /* Input */
 .input {
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-borders);
   color: var(--color-heading);
   font-size: 2rem;
   outline: 0;
@@ -244,7 +246,19 @@ a {
 }
 
 .input-group {
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-borders);
+  border-radius: var(--border-radius);
+  display: flex;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 ::placeholder {
