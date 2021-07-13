@@ -6,6 +6,11 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Typography*/
 html {
   font-size: 62.5%;
@@ -164,6 +169,69 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: (#fff);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
 /*ul,
 li {
   position: relative;
@@ -217,21 +285,7 @@ p {
   font-size: 24px;
 }
 
-.button {
-  position: relative;
-  top: 15rem;
-  left: 1rem;
-  width: 350px;
-  height: 30px;
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 15px;
-  background-color: rgb(230, 67, 8);
-  border-radius: 20px;
-}
+
 
 .hosting {
   height: 500px;
