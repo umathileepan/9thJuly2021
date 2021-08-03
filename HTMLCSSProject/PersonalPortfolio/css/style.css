@@ -1,0 +1,18 @@
+/* Nav bar */
+.menu {
+  background-color: #be3144;
+  color: #f0f0f0;
+  text-align: right;
+}
+
+.menu__unordered {
+  height: 67px;
+  width: 970px;
+}
+
+.menu__list {
+  display: inline;
+  font-size: 17px;
+  font-weight: 400;
+  justify-content: flex-end;
+}
