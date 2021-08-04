@@ -767,3 +767,16 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature-img {
+  width: 100%;
+}
