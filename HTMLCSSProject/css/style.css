@@ -15,6 +15,12 @@
   box-sizing: border-box;
 }
 /* Typography*/
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -418,6 +424,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -633,6 +640,12 @@ a {
   color: #fff;
 }
 
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
+
 .block--skewed--right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
@@ -790,4 +803,9 @@ a {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+}
+
+/* Feature Shocase */
+.feature__showcase {
+  margin-top: 2rem;
 }
