@@ -628,8 +628,9 @@ a {
 }
 
 .block__header {
-  text-align: center;
+  margin-top: 10rem;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .block--dark {
@@ -735,6 +736,7 @@ a {
 
 .hero__image {
   width: 100%;
+  margin-bottom: 10rem;
 }
 
 @media screen and (min-width: 768px) {
